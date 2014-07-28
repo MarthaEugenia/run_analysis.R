@@ -42,5 +42,11 @@ dataset_labels <- gsub("\\...","_", dataset_labels)
 dataset_labels <- gsub("\\..","", dataset_labels)
 colnames(dataset_mean_std) <- dataset_labels
 
+# ------- 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
-write.csv(file="final_data.txt", x=dataset_mean_std)
+final_data <- dataset_mean_std[,c(-69)]
+agg_data <-aggregate(final_data, by=list(subject = final_data$subject_id, activity = final_data$activity_id), FUN=mean, na.rm=TRUE)
+agg_data <- agg_data[,c(-1,-2)]
+final_data <- merge(agg_data, activity_labels)
+
+write.csv(file="final_data.csv", x=final_data)

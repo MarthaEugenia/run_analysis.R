@@ -19,7 +19,7 @@ Looks for mean and standard deviation from features
 
 -- 3. Uses descriptive activity names to name the activities in the data set
 
-
+By looking at the activity_id a new column is added to state what the id meant (1 for WALKING, etc.)
 
 -- 4. Appropriately labels the data set with descriptive variable names. 
 
@@ -27,7 +27,7 @@ Change some variables names, changing  "." to "_"
 
 -- 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-
+Finds the mean for each activity id and each subject id to create the final tidy data
 
 
 Source for data:

@@ -1,5 +1,6 @@
+Code Book
 
-# ------- 1. Merges the training and the test sets to create one data set.
+ ------- 1. Merges the training and the test sets to create one data set.
 
 features 
 2 variables: "feature_id", "feature_labels"
@@ -34,14 +35,14 @@ merged the previously described variables (subject_test, X_test, Y_test)
 tt_dataset 
 merged dataframe by row for the two sets mentioned above (test_set, training_set)
 
-# ------- 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+------- 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 
 
 dataset_mean_std 
 Dataframe containing only the features that contain "mean" and "std"
 
 
-# ------- 3. Uses descriptive activity names to name the activities in the data set
+------- 3. Uses descriptive activity names to name the activities in the data set
 
 
 activity_labels 
@@ -55,7 +56,7 @@ activity_labels
 
 
 
-# ------- 4. Appropriately labels the data set with descriptive variable names. 
+------- 4. Appropriately labels the data set with descriptive variable names. 
 
 dataset_labels 
 labels of the last dataframe containing only "mean" and "std", this variables is used to clean the variables names:
@@ -131,7 +132,7 @@ labels of the last dataframe containing only "mean" and "std", this variables is
 [69] "activity_labels"  
 
 
-# ------- 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+------- 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
  
 
 final_data 

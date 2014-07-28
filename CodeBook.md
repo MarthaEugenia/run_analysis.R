@@ -3,9 +3,10 @@ Code Book
  ------- 1. Merges the training and the test sets to create one data set.
 
 features 
-2 variables: "feature_id", "feature_labels"
-561 different labels
 
+2 variables: "feature_id", "feature_labels"
+
+561 different labels
 subject_train
 1 variable: "subject_id" for the train set
 
